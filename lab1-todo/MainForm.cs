@@ -13,7 +13,7 @@ public sealed class MainForm : ZenForm
     private readonly ListView _view = new() { Width = 970, Height = 350, View = View.Details, FullRowSelect = true, MultiSelect = false, CheckBoxes = true, BorderStyle = BorderStyle.None, BackColor = Paper, HideSelection = false };
     private readonly Label _summary = Caption("");
     private bool _refreshing;
-    public MainForm(string? path = null) : base("Пространство для дел", "01 / СПИСОК ДЕЛ     ·     По одному шагу, в своём ритме")
+    public MainForm(string? path = null) : base("Пространство для дел", "01 / СПИСОК ДЕЛ")
     {
         _path = path ?? Core.Storage.DataPath("tasks");
         _priority.SelectedIndex = 1;
